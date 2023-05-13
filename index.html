@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Canal de YouTube</title>
+    <style>
+      /* Estilos CSS para el encabezado */
+      header {
+        background-color: red;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* Estilos CSS para el botón de registro */
+      .register-button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mi Canal de YouTube</h1>
+    </header>
+    <section>
+      <!-- Contenido de los videos -->
+    </section>
+    <button class="register-button" onclick="window.open('https://www.youtube.com/signup', '_blank');">Crear Canal de YouTube</button>
+    <form action="/crear-canal" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <br>
+      <label for="gmail">Gmail:</label>
+      <input type="email" id="gmail" name="gmail" required>
+      <br>
+      <label for="descripcion">Descripción del Canal:</label>
+      <textarea id="descripcion" name="descripcion"></textarea>
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
